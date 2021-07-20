@@ -1,0 +1,80 @@
+.flow {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: cl(cerulean);
+  .inner {
+  }
+  .flow-cont {
+    text-align: center;
+  }
+  .flow-list-upper {
+    @include overTab {
+      display: flex;
+      padding-bottom: 40px;
+    }
+  }
+  .flow-list-lower {
+    @include overTab {
+      display: flex;
+    }
+  }
+  .flow-item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column-reverse;
+
+    @include overTab {
+    }
+
+    .text {
+      margin: 0 auto;
+    }
+    .title {
+      font-size: 30px;
+      color: cl(emerald);
+      font-weight: 600;
+    }
+    .sub {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .image {
+      margin: 0 auto;
+      background-color: cl(white);
+      padding: 40px;
+      border: 10px solid rgba(59, 166, 201, 0.3);
+      max-width: 220px;
+    }
+    + .flow-item {
+    }
+  }
+  .arrow {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: solid 30px #697b91;
+    border-right: solid 30px transparent;
+    border-bottom: solid 30px transparent;
+    border-left: solid 30px transparent;
+    @include overTab {
+      border-left: solid 30px #697b91;
+      border-top: solid 30px transparent;
+      border-right: solid 30px transparent;
+      border-bottom: solid 30px transparent;
+    }
+  }
+  .-step {
+    @include overTab {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}

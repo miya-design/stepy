@@ -1,0 +1,136 @@
+.price {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: cl(cerulean);
+  @include overTab {
+  }
+  .inner {
+  }
+
+  .price-wrap {
+    display: block;
+    text-align: center;
+    margin: 16px auto;
+  }
+  .price-list {
+    padding-left: 0;
+    display: inline-block;
+    background-color: cl(white);
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    .item {
+      text-align: left;
+      font-size: 30px;
+      font-weight: 600;
+      span {
+        color: cl(emerald);
+      }
+    }
+  }
+
+  .price-item {
+    flex-flow: column-reverse;
+    display: flex;
+    align-items: center;
+
+    @include overTab {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    &:nth-child(odd) {
+      @include overTab {
+        flex-flow: row-reverse;
+      }
+      .price-image {
+        @include overTab {
+          margin-right: 40px;
+        }
+      }
+      .desc {
+        @include overTab {
+          margin-right: 40px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      @include overTab {
+        flex-flow: row;
+      }
+      .price-image {
+        @include overTab {
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .price-desc {
+      text-align: left;
+      background-color: cl(white);
+      padding: 50px 100px;
+      border-radius: 10px;
+      display: flex;
+      flex-flow: column;
+
+      @include overTab {
+        flex: 1;
+      }
+    }
+    .price-image {
+      @include overTab {
+        width: percentage(640 /1280);
+        display: flex;
+      }
+    }
+    .text {
+      font-weight: 600;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      @include overTab {
+        font-size: 30px;
+      }
+      + .text {
+        @include overTab {
+          padding-top: 40px;
+        }
+      }
+      span {
+        color: cl(emerald);
+      }
+    }
+    .detail-title {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      @include overTab {
+      }
+    }
+    .detail {
+      margin: 0 auto;
+      font-size: 20px;
+
+      @include overTab {
+      }
+    }
+    .price-title {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include overTab {
+      }
+    }
+    .prices {
+      font-size: 20px;
+      margin: 0 auto;
+
+      @include overTab {
+      }
+    }
+  }
+}

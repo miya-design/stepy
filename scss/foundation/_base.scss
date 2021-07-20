@@ -1,0 +1,49 @@
+$colors: (
+  white: #fff,
+  black: #000,
+  text: #333333,
+  grey: #6e6e6e,
+  lightgrey: #f2f2f2,
+  red: #ff0000,
+  primary: #4d0000,
+  baige: #ffffdd,
+  green: #82d579,
+  beige: #ffe8b7,
+  light-yellow: #ffffe0,
+  wine-red: #a3000e,
+  blue-green: #00ae95,
+  emerald: #3ba6c9,
+  ice-blue: #f7fbff,
+  cerulean: #eef8fd,
+  strong-blue: #3ba6c8,
+  super-blue: #385fa3,
+  button-yellow: #f6b403,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}
+
+@mixin TimesNewRoman {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+    "Yu Mincho", "MS PMincho", serif;
+}
+
+@mixin overTab {
+  @media print, screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+._sp {
+  @include overTab {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+  @include overTab {
+    display: block;
+  }
+}

@@ -1,0 +1,67 @@
+.service {
+  padding-top: 80px;
+  border-radius: 50px;
+  background-color: cl(ice-blue);
+  padding-bottom: 80px;
+  @include overTab {
+  }
+  .service-cont {
+  }
+
+  .service-list {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include overTab {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .service-item {
+    background-color: cl(white);
+    display: flex;
+    margin: 0 auto;
+    flex-flow: column-reverse;
+    border-radius: 5px;
+    max-width: 350px;
+    @include overTab {
+    }
+    + .service-item {
+      margin-top: 20px;
+      @include overTab {
+        margin-top: 0;
+        margin-left: 1.5em;
+      }
+    }
+    .text {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+    .title {
+      text-align: center;
+      font-size: 18px;
+      padding-bottom: 20px;
+      @include overTab {
+        font-size: 1.3vw;
+      }
+    }
+    .desc {
+      text-align: center;
+      font-size: 14px;
+      padding-bottom: 20px;
+      @include overTab {
+        font-size: 1vw;
+      }
+    }
+    .image {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @include overTab {
+      }
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+}

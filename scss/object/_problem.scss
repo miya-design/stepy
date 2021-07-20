@@ -1,0 +1,71 @@
+.problem {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include overTab {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .problem-title {
+    @include overTab {
+      text-align: center;
+    }
+  }
+  .problem-cont {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    @include overTab {
+      margin-top: 50px;
+      margin-bottom: 0;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+
+  .problem-list {
+    padding-left: 0;
+    display: inline-block;
+    list-style: initial;
+    padding-bottom: 40px;
+    @include overTab {
+    }
+
+    .item {
+      text-align: left;
+      font-size: 16px;
+      color: cl(emerald);
+      @include overTab {
+        font-size: 1.6vw;
+      }
+
+      span {
+        color: cl(black);
+      }
+      + .item {
+        padding-top: 20px;
+      }
+    }
+  }
+  .arrow {
+    padding-bottom: 40px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: solid 15px #697b91;
+    border-right: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+    border-left: solid 15px transparent;
+  }
+  h3 {
+    font-size: 1.6vw;
+  }
+}

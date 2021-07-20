@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header class="header" id="home">
+        <div class="header-fixed">
+            <h1 class="header-logo"><img class="logo" src="/image/logo.png" ></h1>
+            <button class="nav-btn" id="nav-btn" type="button"
+                aria-label="メニュー"><span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav header-nav" id="nav">
+            <nav-wrap>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" >ホーム</a></li>
+                    <li class="nav-item"><a href="#service" >サービス</a></li>
+                    <li class="nav-item"><a href="#price" >価格</a></li>
+                    <li class="nav-item"><a href="#works" >作品</a></li>
+                    <li class="nav-item"><a href="#flow" >製作の流れ</a></li>
+                    <li class="nav-item"><a href="#inqury" >お問い合わせ</a></li>
+                    <li class="nav-item nav-link"><a href="https://forms.gle/nUohJXkCXdds69Qj9" >お問い合わせ</a></li>
+                </ul>
+            </nav-wrap>
+        </div>
+    </header>
+    <div class="top">
+        <div class="inner-cover">
+            <div class="top-list">
+                <div class="top-desc">
+                    <div class="top-title"><p>Webサイト製作でのお困りごと</p></div>
+                    <div class="sub-title"><p>丁寧・低価格でサポート</p></div>
+                    <div class="top-btn"><a href="#">無料相談はこちら</a></div>
+                </div>
+                <div class="image"><img class="top-image" src="/image/top-image.png" alt="https://forms.gle/nUohJXkCXdds69Qj9"></div>
+            </div>
+        </div>
+    </div>
+    <section class="problem cmn-section ">
+        <inner>
+            <h2 class="cmn-title problem-title">
+                <span class="main">こんなお悩みありませんか</span>
+                <span class="sub">ploblem</span>
+            </h2>
+            <div class="problem-cont">
+                    <ul class="problem-list">
+                        <li class="item"><span>低コストでサイト製作したい</span></li>
+                        <li class="item"><span>サイト製作したいが、運用コストや流れがわからない</span></li>
+                        <li class="item"><span>古いサイトに最新の機能を実装してサイトの改善を行いたい</span></li>
+                        <li class="item"><span>サイト製作したが、集客方法のどこを改善すべきかわからない</span></li>
+                    </ul>
+                    <div class="arrow"></div>
+                    <h3>これらの問題を解決可能です</h3>
+            </div>
+        </inner>
+    </section>
+    <section class="service cmn-section" id="service">
+        <inner>
+            <h2 class="cmn-title">
+                <span class="main">サービス</span>
+                <span class="sub">service</span>
+            </h2>
+            <d class="service-cont">
+                <div class="service-list wow animate__animated animate__fadeIn">
+                    <div class="service-item">
+                        <div class="text">
+                            <div class="title">サイト制作</div>
+                            <div class="desc">LPサイトやコーポレートサイト制作承ります。ツールを使用して低価格でサイト製作も可能です。</div>
+                        </div>
+                        <div class="image"><img src="/image/service-image1.png" alt="#"></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="text">
+                            <div class="title">集客</div>
+                            <div class="desc">サイト制作後の集客もサポート致します。公式LINEやLstepの構築・運用代行、広告運用致します。</div>
+                        </div>
+                        <div class="image"><img src="/image/service-image2.png" alt="#"></div>
+                    </div>
+                    <div class="service-item">
+                        <div class="text">
+                            <div class="title">アフターサポート</div>
+                            <div class="desc">サイトの保守・運用に関わる内容を承ります。古いサイトから最新の機能を実装する改修も致します。</div>
+                        </div>
+                        <div class="image"><img src="/image/service-image3.png" alt="#"></div>
+                    </div>
+                </div>
+            </div>
+        </inner>
+    </section>
+    <section class="price cmn-section" id="price">
+        <div class="inner wow animate__animated animate__fadeIn">
+            <h2 class="cmn-title">
+                <span class="main">価格</span>
+                <span class="sub">price</span>
+            </h2>
+            <div class="price-wrap">
+                <ul class="price-list">
+                    <li class="item"><span>-01 </span>コーディング　　　　　　　￥3,000～</li>
+                    <li class="item"><span>-02 </span>LP制作　　　　　　　　　￥30,000～</li>
+                    <li class="item"><span>-03 </span>コーポレートサイト制作　￥50,000～</li>
+                    <p>※上記価格は目安になります。正式なお見積につきましては、<br>　別途ご相談とさせていただきます。</p>
+                </ul>
+                
+            </div>
+            
+            <ul class="price-cont">
+                    <li class="price-item">
+                        <div class="price-desc">
+                            <p class="text"><span>-01</span><br>コーディング</p>
+                            <p class="detail-title">【詳細】</p>
+                            <p class="detail">LPやコーポレートサイト、ブログなど、 目的に応じた適切なコーディングを行います。レスポンシブ対応も致します。また、軽微なコードの修正なども承ります。</p>
+                            <p class="price-title">【金額目安】</p>
+                            <p class="prices">コード修正　　　　　　　：￥3,000～/1p<br>トップページコーディング：￥10,000〜<br>下層ページコーディング　：￥5,000〜</p>
+                        </div>
+                        <div class="price-image"><img src="/image/price-image1.png" alt=""></div>
+                    </li>
+
+                    <div class="price-item">
+                        <div class="price-desc">
+                            <p class="text"><span>-02</span><br>LP制作</p>
+                            <p class="detail-title">【詳細】</p>
+                            <p class="detail">他のページに飛ばないシンプルなサイト向けです。<br>デザインからコーディング、レスポンシブ対応まで行います。<br>STUDIOで製作であればコストを抑えて早く製作可能です。</p>
+                            <p class="price-title">【金額目安】</p>
+                            <p class="prices">STUDIOにてLP製作：￥20,000~<br>LP制作　　　　　　：￥30,000~</p>
+                        </div>
+                        <div class="price-image"><img src="/image/price-image2.png" alt=""></div>
+                    </div>
+
+
+                    <div class="price-item">
+                        <div class="price-desc">
+                            <p class="text"><span>-03 </span><br>コーポレートサイト制作</p>
+                            <p class="detail-title">【詳細】</p>
+                            <p class="detail">情報の多いサイトに最適です。<br>WordPressサイトの構築や既存サイトのWordPress移行、<br>コードの修正に対応しております。</p>
+                            <p class="price-title">【金額目安】</p>
+                            <p class="prices">WordPress移行　　　　　　　　：￥20,000〜<br>WordPress構築（10ページ以下）：￥50,000〜</p>
+                        </div>
+                        <div class="price-image"><img src="/image/price-image3.png" alt=""></div>
+                    </div>
+            </ul>
+            
+        </div>
+    </section>
+    <section class="works cmn-section" id="works">
+        <div class="inner wow animate__animated animate__fadeIn">
+            <h2 class="cmn-title">
+                <span class="main">作品</span>
+                <span class="sub">works</span>
+            </h2>
+            <div class="works-cont cmn-section -black">
+                <div class="works-list">
+                    <div class="works-item">
+                        <a href="https://miya-design.github.io/myhrportfolio/" class="portfolio_link">
+                            <div class="portfolio">
+                            <img src="image/works1.png" alt="portfolio" class="portfolio-img">
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="caption">
+                                <p class="works-desc">
+                                【Title】Ryo Miyahara's Portfolio<br><br>
+                                【Skill】HTML / CSS / JQuery<br><br>
+                                【Detail】本事業サイトです。
+                                </p>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="works-item">
+                        <a href="https://miya-design.github.io/sample_hotspring/" class="portfolio_link">
+                            <div class="portfolio">
+                            <img src="image/works2.png" alt="portfolio" class="portfolio-img">
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="caption">
+                                <p class="works-desc">
+                              【Title】温泉旅館<br><br>
+                                【Skill】HTML / CSS / JQuery<br><br>
+                                【Detail】架空の結婚式場のサイトです。
+                                </p>
+                        　　 </div>
+                            </div>
+                    　　　 </a>
+                        </div>
+
+                        <div class="works-item">
+                            <a href="https://gardenweddingrmhr.studio.site" class="portfolio_link">
+                                <div class="portfolio">
+                                  <img src="image/works3.png" alt="portfolio"  class="portfolio-img">
+                                  <div class="mask1"></div>
+                                  <div class="mask2"></div>
+                                  <div class="caption">
+                                    <p class="works-desc">
+                                      【Title】結婚式場<br><br>
+                                      【Skill】STUDIO<br><br>
+                                      【Detail】架空の結婚式場のサイトです。
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flow cmn-section" id="flow">
+        <div class="inner wow animate__animated animate__fadeIn">
+            <h2 class="cmn-title">
+                <span class="main">製作の流れ</span>
+                <span class="sub">flow</span>
+            </h2>
+            <div class="flow-cont">
+                <ul class="flow-list-upper">
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-01</div>
+                            <p class="sub">お問い合わせ</p>
+                            <p class="desc">下記ボタンよりお気軽に<br>お問合せください。</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image1.png" alt="#"></div>
+                    </li>
+                    <li class="arrow"></li>
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-02</div>
+                            <p class="sub">お見積・ご提案</p>
+                            <p class="desc">お客様のご希望を伺い、<br>お見積やご提案いたします。</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image2.png" alt="#"></div>
+                    </li>
+                    <li class="arrow"></li>
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-03</div>
+                            <p class="sub">契約・打合せ</p>
+                            <p class="desc">提示した内容にご納得頂いた後<br>デザインすり合わせ</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image3.png" alt="#"></div>
+                    </li>
+                    <li class="arrow -step"></li>
+                </ul>
+                <ul class="flow-list-lower">
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-04</div>
+                            <p class="sub">仮納品・修正</p>
+                            <p class="desc">仮納品させていただき、<br>ご要望を伺い修正。</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image4.png" alt="#"></div>
+                    </li>
+                    <li class="arrow"></li>
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-05</div>
+                            <p class="sub">納品検収・公開</p>
+                            <p class="desc">お客様が承諾下さった後、<br>公開作業を行います。</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image5.png" alt="#"></div>
+                    </li>
+                    <li class="arrow"></li>
+                    <li class="flow-item">
+                        <div class="text">
+                            <div class="title">-06</div>
+                            <p class="sub">保守・運用</p>
+                            <p class="desc">納品後30日内の修正承<br>ります。</p>
+                        </div>
+                        <div class="image"><img src="/image/flow-image6.png" alt="#"></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="inquiry cmn-section" id="inquiry">
+        <div class="inner wow animate__animated animate__fadeIn">
+            <div class="cmn-title">
+                <span class="main">お問い合わせ</span>
+                <span class="sub">inquiry</span>
+            </div>
+            <div class="inquiry-cont">
+                <p class="desc">お見積は無料でございます。<br>まずはお気軽にお問い合わせください。</p>
+                <div class="inq-btn cmn-link wow animate__animated animate__rubberBand" data-wow-offset="100" target="_blank"><a href="https://forms.gle/nUohJXkCXdds69Qj9">お問い合わせ</a></div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer wow animate__animated animate__fadeIn">
+            <div class="inner">
+                <nav class="nav-wrap">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home">ホーム</a></li>
+                        <li class="nav-item"><a href="#service">サービス</a></li>
+                        <li class="nav-item"><a href="#price">価格</a></li>
+                        <li class="nav-item"><a href="#works">実績</a></li>
+                        <li class="nav-item"><a href="#flow">製作の流れ</a></li>
+                        <li class="nav-item"><a href="#inquiry">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <h1 class="footer-logo"><img class="logo" src="/image/logo.png" alt=""></h1>
+                <p class="copy-right">Copyright (c) 2021 All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>

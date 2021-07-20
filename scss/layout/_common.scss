@@ -1,0 +1,41 @@
+.cmn-section {
+}
+.cmn-title {
+  margin-bottom: 40px;
+  .main {
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    @include overTab {
+      font-size: 2vw;
+    }
+  }
+  .sub {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: cl(emerald);
+    font-weight: 500;
+
+    @include overTab {
+      font-size: 1.6vw;
+    }
+  }
+}
+.cmn-link {
+  a {
+    color: cl(white);
+    background-color: cl(button-yellow);
+    width: 155px;
+    height: 37px;
+    display: flex;
+    border-radius: 8px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    @include overTab {
+    }
+  }
+}

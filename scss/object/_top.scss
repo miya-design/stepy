@@ -1,0 +1,74 @@
+.top {
+  width: 100%;
+  margin-top: 100px;
+  @include overTab {
+  }
+}
+
+.inner-cover {
+  width: 100%;
+  background: cl(cerulean);
+}
+
+.top-list {
+  display: flex;
+  align-items: center;
+
+  @include overTab {
+    justify-content: space-between;
+  }
+  .top-desc {
+    align-self: center;
+    margin-left: 1vw;
+    padding: 10px;
+    background-color: cl(cerulean);
+    border-radius: 10px;
+  }
+}
+.image {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.top-title {
+  margin-left: 20px;
+  font-size: 2vw;
+  font-weight: 600;
+
+  @include overTab {
+  }
+  p {
+  }
+}
+.sub-title {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: cl(cerulean);
+  p {
+  }
+
+  @include overTab {
+  }
+}
+.top-btn {
+  font-size: 2vw;
+  margin-left: 20px;
+  margin-top: 40px;
+  @include overTab {
+    margin-top: 120px;
+  }
+
+  a {
+    color: cl(white);
+    background-color: cl(button-yellow);
+    width: 20vw;
+    padding: 1vw;
+    display: flex;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+}

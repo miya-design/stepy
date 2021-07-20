@@ -1,0 +1,106 @@
+.works {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include overTab {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .inner {
+  }
+  .works-cont {
+  }
+  .works-list {
+    @include overTab {
+      display: flex;
+      justify-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .works-item {
+    margin-right: 40px;
+    margin-left: 40px;
+
+    @include overTab {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    + .works-item {
+      margin-top: 40px;
+      @include overTab {
+        margin-left: 20px;
+        margin-top: 0;
+      }
+    }
+
+    .portfolio-link {
+      .portfolio-img {
+        display: block;
+      }
+    }
+
+    .text {
+      font-size: 20px;
+      text-align: center;
+      @include overTab {
+      }
+    }
+    .works-desc {
+      font-size: 20px;
+      @include overTab {
+      }
+    }
+    .image {
+    }
+  }
+  .portfolio {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .portfolio .caption {
+    width: 100%;
+    height: 100%;
+    visibility: hidden; /* 文字を表示しない */
+    font-size: 150%;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: center;
+    -webkit-transition: all 0.4s step-end;
+    transition: all 0.4s step-end;
+  }
+  .portfolio:hover .caption {
+    visibility: visible; /* 文字を表示する */
+  }
+  .portfolio .caption p {
+    color: #fff;
+    opacity: 0; /* ホバーが解除された時すぐ消えるように、文字を表示しない */
+  }
+  .portfolio:hover .caption p {
+    opacity: 1; /* 文字を表示する */
+  }
+  .portfolio .mask1,
+  .portfolio .mask2 {
+    width: 50%; /* 幅は半部のサイズ */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .portfolio .mask1 {
+    left: -50%; /* 枠の左に置いて表示させない */
+  }
+  .portfolio:hover .mask1 {
+    left: 0px; /* 左にずらして表示する */
+  }
+  .portfolio .mask2 {
+    right: -50%; /* 枠の右に置いて表示させない */
+  }
+  .portfolio:hover .mask2 {
+    right: 0px; /* 右にずらして表示する */
+  }
+}
